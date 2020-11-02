@@ -12,10 +12,10 @@ double mysigmoid(ull x){
         ull n=1ULL<<x;
         return (double)n/(1+n);
     }
-    else return 1.0/(1ULL<<-x);
+    else return 1.0/((1ULL<<-x)+1);
 }
 int main(){
-    ull repeat = 10000000000; //repeat회 반복한다.
+    ull repeat = 100000000; //repeat회 반복한다.
     clock_t _start;
     clock_t _end;
 
